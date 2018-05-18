@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_toron"
+
+            android:title="참여한 토론"
+            android:icon="@drawable/icon_debate" />
+        <item
+            android:id="@+id/nav_alram"
+
+            android:title="메시지/알림"
+            android:icon="@drawable/icon_alarm" />
+        <item
+            android:id="@+id/nav_settings"
+
+            android:title="설정"
+            android:icon="@drawable/icon_setting"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_gogek"
+
+            android:title="고객 센터 문의"
+            android:icon="@android:drawable/sym_action_call" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_sinmoongo"
+
+                android:title="신문고 정책참여"
+                android:icon="@drawable/icon_sinmoongo" />
+            <item
+                android:id="@+id/nav_thinking"
+
+                android:title="국민생각함 바로가기"
+                android:icon="@drawable/icon_sinmoongo" />
+            <item
+                android:id="@+id/nav_logout"
+
+                android:title="로그 아웃"
+                android:icon="@drawable/icon_logout" />
+        </menu>
+    </item>
+</menu>

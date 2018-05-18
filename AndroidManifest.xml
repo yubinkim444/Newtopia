@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.msi.testshin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".login.GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="뉴토피아"
+        android:supportsRtl="true"
+        android:theme="@style/custumStyles">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BoardMain"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".NewsBoard"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="c09374ceea08049649fccc69a3952b2e" />
+
+        <activity android:name=".InitActivity" />
+        <activity android:name=".Login" />
+        <activity android:name=".login.KakaoSignupActivity" />
+        <activity android:name=".Member" />
+        <activity android:name=".NewPage" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/custumStyles" />
+
+        <activity android:name=".webView.Sinmoongo" />
+        <activity android:name=".webView.GookminThinking" />
+        <activity android:name=".webView.GogakActivity" />
+        <activity android:name=".CommentActivity"></activity>
+    </application>
+
+</manifest>
